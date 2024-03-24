@@ -1,0 +1,71 @@
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Healthy Food Form</title>
+              <link rel="stylesheet" type="text/css" href="styledatos.css">
+          </head>
+          <body>
+              <div class="container">
+                  <h1>MENÚ SANO</h1>
+                  <form id="healthy-food-form" action="menu.html">
+                      <label for="height">Estatura (en centimetros):</label>
+                      <input type="number" step="0.01" id="height" name="height" required>
+
+                      <label for="weight">Peso (en kilogramos):</label>
+                      <input type="number" id="weight" name="weight" required>
+
+                      <label for="edad">Edad:</label>
+                      <select id="edad" name="edad" required>
+                          <option value="">Selecciona una opción</option>
+                          <option value="rango1">6-7 Años</option>
+                          <option value="rango2">7-8 Años</option>
+                          <option value="rango3">8-9 Años</option>
+                          <option value="rango4">9-10Años</option>
+                          <option value="rango1">10-11 Años</option>
+                          <option value="rango2">11-12 Años</option>
+                          <option value="rango3">12-13 Años</option>
+                          <option value="rango4">13-14 Años</option>
+                          <option value="rango1">14-15 Años</option>
+                          <option value="rango2">15-16 Años</option>
+                          <option value="rango3">16-17 Años</option>
+                          <option value="rango4">17-18 Años</option>
+                          <option value="rango2">18-29 Años</option>
+                          <option value="rango3">30-59 Años</option>
+                          <option value="rango4">60 o más Años</option>
+                      </select>
+
+                      <label for="Evida">Estilo de vida o dietas:</label>
+                      <select id="Evida" name="Evida" required>
+                          <option value="">Selecciona una opción</option>
+                          <option value="beginner">Veganismo</option>
+                          <option value="intermediate">Vegetarianismo</option>
+                          <option value="advanced">Regular</option>
+                      </select>
+
+                      <label for="fitness-level">Condición física:</label>
+                      <select id="fitness-level" name="fitness-level" required>
+                          <option value="">Selecciona una opción</option>
+                          <option value="beginner">Ligera</option>
+                          <option value="intermediate">Moderada</option>
+                          <option value="advanced">Fuerte</option>
+                      </select>
+
+                      <label for="alergia">¿Padeces alguna alergia? (manten presionado ctrl para seleccionar varias opciones)</label>
+                      <select name="options" multiple>
+                          <option value="option1">Nueces y maní</option>
+                          <option value="option2">Huevo</option>
+                          <option value="option3">Gluten</option>
+                          <option value="option4">Soya</option>
+                          <option value="option5">Mariscos</option>
+                          <option value="option6">Leche/Lactosa</option>
+                          <option value="option7">Apio</option>
+                          <option value="option8">Azucares</option>
+                          <option value="option9">Mostaza</option>
+                          <option value="option10">Dióxido de azufre/Sulfitos</option>  <option value="option11">Ninguna</option>
+                      </select>
+
+                      <input type="submit" value="Enviar">
+                  </form>
+              </div>
+          </body>
+          </html>
