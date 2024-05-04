@@ -1,28 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compitable" content="IC=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MENÚ SANO</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Recetas</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1>MENÚ SANO</h1>
-    <form action="datos.html">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+    <header>
+        <a href="saber.html" class="learn-more-btn">Saber más</a>
+        <a href="index.html" class="home-link"><img src="jpgs/casa.png" alt="Home"></a>
+        <h1>MENÚ SALUDABLE</h1>
+    </header>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+    <div class="container">
+      <!--<form id="submit" action="recetas.html" method="GET">
+           <label for="edad">Edad:</label>
+           <select id="edad" name="edad" required>
+               <option value="">Selecciona una opción</option>
+               <option value="rango1">0-10 Años</option>
+               <option value="rango2">11-18 Años</option>
+               <option value="rango3">19-29 Años</option>
+               <option value="rango4">30+ Años</option>
+           </select> -->
 
-      <input type="submit" value="Sign In">
-    </form>
-  </div>
+            <label for="height">Edad (años):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="height">Estatura (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+          <label for="Evida">Estilo de vida o dietas:</label>
+          <select id="Evida" name="Evida" required>
+              <option value="">Selecciona una opción</option>
+              <option value="beginner">Veganismo</option>
+              <option value="intermediate">Vegetarianismo</option>
+              <option value="advanced">Regular</option>
+          </select>
+
+          <label for="fitness-level">Frecuencia de actividad física:</label>
+          <select id="fitness-level" name="fitness-level" required>
+              <option value="none">Ninguna (Sedentarismo)</option>
+              <option value="beginner">Ligera (1 - 2 veces por semana)</option>
+              <option value="intermediate">Moderada (3 - 4 veces por semana)</option>
+              <option value="advanced">Fuerte (más de 4 veces por semana)</option>
+          </select>
+          
+          <label for="sexo">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="woman">Femenino</option>
+              <option value="man">Masculino</option>
+              <option value="other">Otro</option>
+          </select>
+
+
+            <label for="allergies">Alergias (mantén presionado ctrl para seleccionar varias opciones):</label>
+            <select id="allergies" name="allergies" multiple>
+                <option value="nuts">Nueces y maní</option>
+                <option value="egg">Huevo</option>
+                <option value="gluten">Gluten</option>
+                <option value="soy">Soya</option>
+                <option value="seafood">Mariscos</option>
+                <option value="milk">Leche/Lactosa</option>
+                <option value="celery">Apio</option>
+                <option value="sugars">Azucares</option>
+                <option value="mustard">Mostaza</option>
+                <option value="sulfites">Dióxido de azufre/Sulfitos</option>
+                <option value="nothing">Ninguna</option>
+            </select>
+          <!--
+            <label for="goals">Objetivo:</label>
+            <select id="goals" name="goals">
+              
+                <option value="lose_weight">Bajar de peso</option>
+                <option value="gain_weight">Subir de peso</option>
+                <option value="build_muscle">Aumentar masa muscular</option>
+                <option value="diet">Hacer dieta</option>
+            </select
+     
+     
+      <button type="submit">Buscar Recetas</button>
+            -->
+             <button type="button" onclick="imprimirInfo()">Tu info:</button>
+              <p id="totalCalorias"></p>
+              <p id="caloriasProteinas"></p> 
+              <p id="gramosProteinas"></p>
+              <p id="caloriasGrasas"></p>
+              <p id="gramosGrasas"></p>
+              <p id="caloriasCarbohidratos"></p>   
+              <p id="gramosCarbohidratos"></p>    
+
+             <a href="recetas.html" target="_blank"><button type="submit">Busquemos tu receta!</button></a>
+          <!--</form>-->
+    </div>
+          
+    <script src="index.js"></script>
 </body>
-
 </html>
-
+            
